@@ -49,6 +49,17 @@ var mCurrentIndex = 0;
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
 var mURL = "images.json";
+mRequest.onreadystatechange = function() {
+      if (mRequest.readyState == 4 && mRequest.status == 200) {
+          try {
+               
+               mJson = JSON.parse(mRequest.responseText);
+               
+               console.log(mJson);
+          } catch(err) {
+               console.log(error);
+} }
+};
 
 // Array holding GalleryImage objects (see below).
 var mImages = [];
