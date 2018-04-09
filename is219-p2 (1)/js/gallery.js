@@ -48,6 +48,7 @@ var mCurrentIndex = 0;
 
 // XMLHttpRequest variable
 var mRequest = new XMLHttpRequest();
+var mURL = "images.json";
 
 // Array holding GalleryImage objects (see below).
 var mImages = [];
