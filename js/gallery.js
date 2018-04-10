@@ -63,7 +63,7 @@ var mImages = [];
 // Holds the retrived JSON information
 var mJson = "";
 
-var mURL = "images.json";
+var mURL = 'images.json';
 var $_GET = getQueryParams(document.location.search);
 
 	if($_GET["json"] === undefined){
