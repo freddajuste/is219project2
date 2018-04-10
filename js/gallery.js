@@ -50,17 +50,6 @@ function swapPhoto() {
 	
 }
 
-function GalleryImage(location, description, date, url) {
-	//implement me as an object to hold the following data about an image:
-	//1. location where photo was taken
-	//2. description of photo
-	//3. the date when the photo was taken
-	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
-	this.location = new location;
-	this.description = new description;
-	this.date = new date;
-	this.url = new url;
-}
 
 // Counter for the mImages array
 var mCurrentIndex = 0;
@@ -104,15 +93,6 @@ mRequest.send();
 
 // URL for the JSON to load by default
 // Some options for you are: images.json, images.short.json; you will need to create your own extra.json later
-var mUrl = 'images.json';
-var $_GET = getQueryParams(document.location.search);
-
-	if($_GET["json"] === undefined){
-		console.log("No extra Json");
-	}else{
-	
-	mUrl = $_GET["json"];
-	}
 
 
 //You can optionally use the following function as your event callback for loading the source of Images from your json data (for HTMLImageObject).
@@ -206,6 +186,18 @@ window.addEventListener('load', function() {
 		});
 
 }, false);
+
+function GalleryImage(location, description, date, url) {
+	//implement me as an object to hold the following data about an image:
+	//1. location where photo was taken
+	//2. description of photo
+	//3. the date when the photo was taken
+	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+	this.location = new location;
+	this.description = new description;
+	this.date = new date;
+	this.url = new url;
+}
 
 
 function getQueryParams(qs) {
