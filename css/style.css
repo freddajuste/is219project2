@@ -30,10 +30,18 @@ body {
 	position: absolute;
 	z-index: 3;
 	opacity: .8;
-	top: 0px;
-	
-	right: 300px;
-	bottom: 0px;
+top: 335px;
+	left: 50%;
+	margin-left: -25px;
+
+	/* Firefox */
+	-moz-transition: all 1s ease;
+	/* WebKit */
+	-webkit-transition: all 1s ease;
+	/* Opera */
+	-o-transition: all 1s ease;
+	/* Standard */
+	transition: all 1s ease;
 }
 
 .thumbnail {
