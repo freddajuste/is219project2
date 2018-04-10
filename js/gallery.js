@@ -31,17 +31,6 @@ function animate() {
 }
 
 /************* DO NOT TOUCH CODE ABOVE THIS LINE ***************/
-function GalleryImage(location, description, date, url) {
-	//implement me as an object to hold the following data about an image:
-	//1. location where photo was taken
-	//2. description of photo
-	//3. the date when the photo was taken
-	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
-	this.location = new location;
-	this.description = new description;
-	this.date = new date;
-	this.url = new url;
-}
 function swapPhoto() {
 	//Add code here to access the #slideShow element.
 	//Access the img element and replace its source
@@ -60,6 +49,19 @@ function swapPhoto() {
 	console.log('swap photo');
 	
 }
+
+function GalleryImage(location, description, date, url) {
+	//implement me as an object to hold the following data about an image:
+	//1. location where photo was taken
+	//2. description of photo
+	//3. the date when the photo was taken
+	//4. either a String (src URL) or an an HTMLImageObject (bitmap of the photo. https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement)
+	this.location = new location;
+	this.description = new description;
+	this.date = new date;
+	this.url = new url;
+}
+
 // Counter for the mImages array
 var mCurrentIndex = 0;
 
