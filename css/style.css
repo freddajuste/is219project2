@@ -31,7 +31,7 @@ body {
 	z-index: 3;
 	opacity: .8;
 	top: 335px;
-	left: 0%;
+	left: 50%;
 	margin-left: -25px;
 
 	/* Firefox */
@@ -64,14 +64,14 @@ body {
 	height: 42px;
 	width: 42px;
 	
+	
 }
 
 #nextPhoto {
 	height: 42px;
 	width: 42px;
 	
-	position: absolute;
-	right: 0px;
+	float: right;
 }
 
 .details p {
