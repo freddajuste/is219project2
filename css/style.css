@@ -30,9 +30,9 @@ body {
 	position: absolute;
 	z-index: 3;
 	opacity: .8;
-	top: 335px;
-	left: 50%;
-	margin-left: -25px;
+	
+	right: 300px;
+	bottom: 0px;
 
 	/* Firefox */
 	-moz-transition: all 1s ease;
@@ -70,8 +70,8 @@ body {
 #nextPhoto {
 	height: 42px;
 	width: 42px;
-	
-	float: right;
+	position: absolute;
+	right: 0px;
 }
 
 .details p {
